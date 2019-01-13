@@ -1,7 +1,46 @@
 #root {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: blue;
   color: white;
-  text-align: center;
 }
 
+.main-title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.length-control {
+  display: inline-block;
+  width: 300px;
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.btn-level {
+  display: inline-block;
+  width: 40px;
+  margin-top: 5px;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.timer-wrapper {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+#time-left {
+  margin-top: 10px;
+  font-size: 40px;
+}

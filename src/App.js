@@ -139,11 +139,11 @@ class App extends React.Component {
         </div>
         <div className="timer-control">
           <button id="start_stop" onClick={this.countDown}>
-            <i class="fas fa-play"></i>
-            <i class="fas fa-pause"></i>
+            <i class="fas fa-play fa-2x"></i>
+            <i class="fas fa-pause fa-2x"></i>
           </button>
           <button id="reset" onClick={this.reset}>
-            <i class="fas fa-sync-alt"></i>
+            <i class="fas fa-sync-alt fa-2x"></i>
           </button>
         </div>
         <audio id="beep" preload="auto" 
