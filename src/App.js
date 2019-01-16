@@ -1,5 +1,5 @@
 import React from 'react';
-import TimerLengthControl from './TimerLengthControl';
+import LengthIntervalControl from './LengthIntervalControl';
 import './App.css';
 
 class App extends React.Component {
@@ -113,19 +113,21 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="main-title">Pomodoro Clock</div>
-        <TimerLengthControl 
+        <LengthIntervalControl 
         titleID="break-label"
         minID="break-decrement"
         addID="break-increment"
         lengthID="break-length"
-        title="Break Length"    onClick={this.setBreakLength}
+        title="Break Length"    
+        onClick={this.setBreakLength}
         length={this.state.breakLength} />
-        <TimerLengthControl 
+        <LengthIntervalControl 
         titleID="session-label"
         minID="session-decrement"
         addID="session-increment"
         lengthID="session-length"
-        title="Session Length"    onClick={this.setSessionLength}
+        title="Session Length"    
+        onClick={this.setSessionLength}
         length={this.state.sessionLength} />
         <div className="timer">
           <div className="timer-wrapper">
@@ -139,11 +141,11 @@ class App extends React.Component {
         </div>
         <div className="timer-control">
           <button id="start_stop" onClick={this.countDown}>
-            <i class="fas fa-play fa-2x"></i>
-            <i class="fas fa-pause fa-2x"></i>
+            <i className="fas fa-play fa-2x"/>
+            <i className="fas fa-pause fa-2x"/>
           </button>
           <button id="reset" onClick={this.reset}>
-            <i class="fas fa-sync-alt fa-2x"></i>
+            <i className="fas fa-sync-alt fa-2x"/>
           </button>
         </div>
         <audio id="beep" preload="auto" 
